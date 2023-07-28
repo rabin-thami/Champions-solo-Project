@@ -3,10 +3,38 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Champions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div class="container">
+        <img src="assets/freddie.png" alt="Logo" class="logo-image">
+        <h1>We are the Champions</h1>
+        <textarea name="message-box" id="messageBox" cols="50" rows="5" placeholder="Write your endorsement here"></textarea>
+        <div class="sender-reciver">
+            <input type="text" class="champions-name" placeholder="From">
+            <input type="text" class="champions-name" placeholder="To">
+        </div>
+        <button class="btn">Publish</button>
+        <h2>- Endorsements -</h2>
+        <div class="user-message">
+            <ul>
+                <li class="message">
+                    <strong>Random</strong>
+                    <p class="message">Leanne! Thank you so much for helping me with the March accounting. Saved so much time because of you! 💜 Frode</p>
+                    <strong>From Rabin</strong><span class="react"><i class="fa-solid fa-heart"></i> <strong>3</strong></span>
+                </li>
+                <li class="message">
+                    <strong>Random</strong>
+                    <p class="message">Leanne! Thank you so much for helping me with the March accounting. Saved so much time because of you! 💜 Frode</p>
+                    <strong>From Rabin</strong><span class="react"><i class="fa-solid fa-heart"></i> <strong>3</strong></span>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script type="module" src="index.js"></script>
+    <script src="https://kit.fontawesome.com/c11ec92fb5.js" crossorigin="anonymous"></script>
 </body>
 </html>

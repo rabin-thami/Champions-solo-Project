@@ -1,4 +1,102 @@
 body {
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    margin:  0 auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
+    background-color: #1B1924;
+    padding: 1em;
+    flex-direction: column;
+    color: #fff;
+}
+
+.logo-image {
+    width: 7em;
+    margin: 0.4em auto 0 auto;
+}
+
+#messageBox {
+    width: 23em;
+    padding: 1.5em;
+    outline: none;
+    border-radius: 6px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    background-color: #444059;
+    color: #fff;
+    resize: none;
+    border: none;
+}
+
+.champions-name {
+    text-align: center;
+    width: 13em;
+    padding: 1em; 
+    margin: 1em 0.5em ; 
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: #444059;
+    color: #fff;
+}
+
+.btn {
+    width: 90%;
+    padding: 1.4rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    color: #fff;
+    background-color: #28A9F1;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: #259edf;
+}
+
+h2 {
+    margin: 1em 0 0 0;
+    padding: 0;
+}
+
+
+.user-message {
+    overflow-y:scroll;
+    width: 100%;
+    height: 200px;
+    background-color: #1B1924;
+}
+
+.user-message::-webkit-scrollbar {
+    display: none;
+}
+.user-message ul {
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.user-message ul li {
+    padding: 1em;
+    background-color: #fff;
+    margin: 1em;
+    color: #1B1924;
+}
+
+.react {
+    margin-left:15em;
+    text-align: right;
 }
