@@ -40,7 +40,7 @@ h1 {
 }
 
 .sender-receiver {
-    max-width: 100%;
+    max-width: 77%;
     display: flex;
     justify-content: space-around;
 }

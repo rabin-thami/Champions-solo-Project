@@ -17,19 +17,7 @@ const endorsementContainer = document.querySelector("#endorsement")
 const submitBtn = document.querySelector("#submitBtn")
 
 submitBtn.addEventListener("click", function(){ 
-    let message = userMessage.value;
-    let sender = senderUser.value;
-    let receiver = receiverUser.value;
-
-    const data = {
-        message: message,
-        sender: sender,
-        receiver: receiver,
-    };
-
-    push(champineInDB, data)
-
-    clearInput()
+    validatinForm()
 })
 
 
@@ -56,6 +44,28 @@ onValue (champineInDB, function(snapshot){
 function clearEndorsements() {
     const endorsement = document.querySelector("#endorsement")
     endorsement.innerHTML = ""
+}
+
+function validatinForm() {
+    let message = userMessage.value;
+    let sender = senderUser.value;
+    let receiver = receiverUser.value;
+
+    if (!message && !sender && !receiver) {
+        document.getElementById("userMessage").style.border = "1px solid red";
+        document.getElementById("senderInput").style.border = "1px solid red";
+        document.getElementById("receiverInput").style.border = "1px solid red";
+    } else {
+        const data = {
+            message: message,
+            sender: sender,
+            receiver: receiver,
+        };
+
+        push(champineInDB, data)
+        clearInput()
+    }
+    
 }
 
 
